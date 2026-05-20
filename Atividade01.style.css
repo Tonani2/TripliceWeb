@@ -86,3 +86,25 @@ input[type="color"]{
     cursor: pointer;
     padding: 2px;
 }
+
+button{
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    filter: brightness(0.9);
+}
+
+button:active{
+   transform:scale(98%);
+}
