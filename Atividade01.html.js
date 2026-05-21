@@ -8,3 +8,12 @@ elementoColor.addEventListener("input", (e) => {
 
     document.documentElement.style.setProperty("--primary-color", corNova);
 });
+
+document.addEventListener("DOMContentLoaded", () =>
+{
+   const rootStyle = window.getComputedStyle(document.documentElement);
+
+   const  primaryColor = rootStyle.getPropertyValue("--primary-color").trim();
+
+   elementoColor.value = primaryColor;
+});
